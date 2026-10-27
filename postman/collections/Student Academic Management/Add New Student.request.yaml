@@ -1,0 +1,19 @@
+$kind: http-request
+name: Add New Student
+method: POST
+url: '{{baseUrl}}/students'
+order: 3000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "studentId": 106,
+      "name": "Sneha Patel",
+      "email": "sneha@kiet.edu",
+      "branch": "CSE",
+      "year": 1,
+      "cgpa": 8.75
+    }

@@ -1,0 +1,10 @@
+$kind: collection
+name: Student Academic Management
+description: |-
+  REST API collection for the Student Academic Management system built with Spring Boot.
+  Base URL: http://localhost:8080
+  All endpoints are under the /students resource.
+variables:
+  - key: baseUrl
+    value: 'http://localhost:8080'
+    description: Base URL of the Spring Boot application (default port 8080)

@@ -1,0 +1,9 @@
+$kind: http-request
+name: Get Toppers by CGPA
+method: GET
+url: '{{baseUrl}}/students/topper?cgpa=8.5'
+order: 7000
+queryParams:
+  - key: cgpa
+    value: '8.5'
+    description: Minimum CGPA threshold (double). Returns students with CGPA >= this value.

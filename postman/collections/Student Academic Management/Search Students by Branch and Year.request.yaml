@@ -1,0 +1,12 @@
+$kind: http-request
+name: Search Students by Branch and Year
+method: GET
+url: '{{baseUrl}}/students/search?branch=CSE&year=2'
+order: 6000
+queryParams:
+  - key: branch
+    value: CSE
+    description: Branch name prefix to filter by (e.g. CSE, IT, ECE)
+  - key: year
+    value: '2'
+    description: Academic year to filter by (integer)

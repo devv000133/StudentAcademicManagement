@@ -1,0 +1,22 @@
+$kind: http-request
+name: Update Student
+method: PUT
+url: '{{baseUrl}}/students/:studentId'
+order: 4000
+pathVariables:
+  - key: studentId
+    value: '101'
+    description: The unique numeric ID of the student to update
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Rahul Sharma",
+      "email": "rahul.updated@kiet.edu",
+      "branch": "CSE(AI & ML)",
+      "year": 3,
+      "cgpa": 8.90
+    }
